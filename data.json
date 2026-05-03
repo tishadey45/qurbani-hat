@@ -8,8 +8,8 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
-    "image": "https://i.postimg.cc/example-cow1.jpg",
+    "description": "Healthy deshi cow suitable for Qurbani. Natural food fed.",
+    "image": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9",
     "category": "Large Animal"
   },
   {
@@ -21,21 +21,21 @@
     "weight": 35,
     "age": 2,
     "location": "Dhaka",
-    "description": "Premium Black Bengal goat, healthy and perfect for Qurbani.",
-    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "description": "Famous Black Bengal goat, healthy and strong.",
+    "image": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6",
     "category": "Medium Animal"
   },
   {
     "id": 3,
-    "name": "White Sahiwal Cow",
+    "name": "Sahiwal Cow",
     "type": "Cow",
     "breed": "Sahiwal",
     "price": 150000,
     "weight": 320,
     "age": 4,
     "location": "Rajshahi",
-    "description": "Strong and healthy Sahiwal cow with high milk quality lineage.",
-    "image": "https://i.postimg.cc/example-cow2.jpg",
+    "description": "High quality Sahiwal cow with strong body.",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
     "category": "Large Animal"
   },
   {
@@ -47,8 +47,8 @@
     "weight": 25,
     "age": 1.5,
     "location": "Khulna",
-    "description": "Healthy local sheep, suitable for Qurbani and easy to manage.",
-    "image": "https://i.postimg.cc/example-sheep1.jpg",
+    "description": "Healthy local sheep suitable for Qurbani.",
+    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4",
     "category": "Small Animal"
   },
   {
@@ -60,8 +60,8 @@
     "weight": 300,
     "age": 3.5,
     "location": "Chattogram",
-    "description": "Strong Red Sindhi cow with good health and proper vaccination.",
-    "image": "https://i.postimg.cc/example-cow3.jpg",
+    "description": "Strong Red Sindhi cow with good health.",
+    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb",
     "category": "Large Animal"
   },
   {
@@ -73,8 +73,8 @@
     "weight": 45,
     "age": 2.5,
     "location": "Sylhet",
-    "description": "High quality Boer goat, fast growing and healthy for Qurbani.",
-    "image": "https://i.postimg.cc/example-goat2.jpg",
+    "description": "Premium Boer goat, fast growing and healthy.",
+    "image": "https://images.unsplash.com/photo-1527153857715-3908f2bae5e8",
     "category": "Medium Animal"
   }
 ]
