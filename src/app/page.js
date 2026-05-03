@@ -4,7 +4,7 @@ import ExtraAnimals from "@/components/ExtraAnimals";
 
 export default function Home() {
   return (
-    <div className="text-center">
+    <div className="text-center max-w-7xl mx-auto">
       <Banner />
       <AnimalCard />
       <ExtraAnimals />

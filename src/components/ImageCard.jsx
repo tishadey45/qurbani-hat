@@ -1,35 +1,41 @@
+import { Button, Card } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ImageCard({ animal }) {
-  const { name, type, price, image, category } = animal;
+  const { name, type, price, image, category, description } = animal;
   console.log(animal);
   return (
-    <div className="max-w-4xl mx-auto py-10 px-6 border rounded-xl">
-      <div className="relative w-full aspect-square">
+    <Card className=" w-full items-stretch md:flex-row">
+      <div className="relative h-35 w-full shrink-0 overflow-hidden rounded-2xl sm:h-30 sm:w-30">
         <Image
-          src={image}
+          alt={name}
+          className="pointer-events-none  absolute inset-0 scale-125 object-cover select-none"
           width={200}
           height={200}
-          alt={name}
-          className="object-cover rounded-xl"
+          loading="lazy"
+          src={image}
         />
-
-        <p size="sm" className="absolute right-2 top-2">
-          {category}
-        </p>
       </div>
-    </div>
+      <div className="flex flex-1 flex-col gap-3 text-start">
+        <Card.Header className="gap-1">
+          <Card.Title className="pr-8">{name}</Card.Title>
+          <Card.Description className="text-foreground text-sm font-medium">
+            {description} <br />
+            {type} - {category}
+          </Card.Description>
+        </Card.Header>
+        <Card.Footer className=" flex w-full flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col">
+            <span className="-mt-6 text-sm font-medium text-foreground">
+              Price: BDT {price.toLocaleString()}
+            </span>
+          </div>
+         <Link href={`/animals/${animal.id}`}>
+          <Button className="w-full sm:w-auto">View more</Button>
+         </Link>
+        </Card.Footer>
+      </div>
+    </Card>
   );
 }
-
-//  "id": 1,
-//     "name": "Deshi Shahi Cow",
-//     "type": "Cow",
-//     "breed": "Local Deshi",
-//     "price": 120000,
-//     "weight": 280,
-//     "age": 3,
-//     "location": "Bogura",
-//     "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
-//     "image": "https://i.postimg.cc/example-cow1.jpg",
-//     "category": "Large Animal"
