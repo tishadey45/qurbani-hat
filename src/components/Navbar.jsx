@@ -47,7 +47,7 @@ export default function Navbar() {
               <Image
                 src={
                   user?.image ||
-                  "https://www.svgrepo.com/show/475656/google-color.svg"
+                  "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
                 }
                 alt="avatar"
                 width={40}
