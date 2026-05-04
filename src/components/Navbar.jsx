@@ -60,16 +60,20 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
             <li className="text-sm">{user?.name}</li>
-            <li>
-              <Link href="/profile" className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </Link>
-            </li>
+
             {user ? (
-              <li>
-                <button onClick={handleLogout}>Logout</button>
-              </li>
+              <>
+                <li>
+                  <Link href="/profile" className="justify-between">
+                    Profile
+                    <span className="badge">New</span>
+                  </Link>
+                </li>
+
+                <li>
+                  <button onClick={handleLogout}>Logout</button>
+                </li>
+              </>
             ) : (
               <li>
                 <Link href="/sign-in">Sign in</Link>
