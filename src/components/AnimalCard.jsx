@@ -7,7 +7,7 @@ export default async function AnimalCard() {
   return (
     <div>
       <h1 className="text-4xl font-bold text-center mb-6">Featured animals</h1>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
         {topAnimals.map((animal) => (
           <ImageCard key={animal.id} animal={animal} />
         ))}
