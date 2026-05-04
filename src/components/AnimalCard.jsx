@@ -1,10 +1,8 @@
+import { allAnimals } from "@/lib/animal";
 import ImageCard from "./ImageCard";
 
-export default async function AnimalCard () {
-  const res = await fetch(
-    `https://raw.githubusercontent.com/tishadey45/qurbani-hat/refs/heads/main/data.json`,
-  );
-  const data = await res.json();
+export default async function AnimalCard() {
+  const data = await allAnimals();
   const topAnimals = data.slice(0, 4);
   return (
     <div>
@@ -16,4 +14,4 @@ export default async function AnimalCard () {
       </div>
     </div>
   );
-};
+}

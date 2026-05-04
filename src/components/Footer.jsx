@@ -27,27 +27,24 @@ export default function Footer() {
         <nav>
           <h6 className="footer-title">Social Links</h6>
 
-          <a className="flex items-center gap-2 link link-hover">
-            <FaFacebook className="text-blue-600 text-lg" />
-            Facebook
-          </a>
+          <div className="flex  gap-4 items-center">
+            <a className="flex items-center gap-2 link link-hover">
+              <FaFacebook className="text-blue-600 text-lg" />
+            </a>
 
-          <a className="flex items-center gap-2 link link-hover">
-            <FaTwitter className="text-sky-500 text-lg" />
-            Twitter
-          </a>
+            <a className="flex items-center gap-2 link link-hover">
+              <FaTwitter className="text-sky-500 text-lg" />
+            </a>
 
-          <a className="flex items-center gap-2 link link-hover">
-            <FaInstagram className="text-pink-500 text-lg" />
-            Instagram
-          </a>
+            <a className="flex items-center gap-2 link link-hover">
+              <FaInstagram className="text-pink-500 text-lg" />
+            </a>
 
-          <a className="flex items-center gap-2 link link-hover">
-            <FaLinkedin className="text-blue-700 text-lg" />
-            LinkedIn
-          </a>
+            <a className="flex items-center gap-2 link link-hover">
+              <FaLinkedin className="text-blue-700 text-lg" />
+            </a>
+          </div>
         </nav>
-
         <nav>
           <h6 className="footer-title">About</h6>
           <p className="max-w-xs">

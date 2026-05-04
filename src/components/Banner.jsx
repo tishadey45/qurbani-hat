@@ -10,7 +10,7 @@ export default function Banner() {
         <div>
             <h1 className="text-6xl mb-4 font-bold bg-linear-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">Welcome to QurbaniHat</h1>
             <p className="text-2xl text-gray-600 mb-6 text-start">Find the best qurbani animals for your needs.</p>
-           <Link href="/animals">
+           <Link href="/all-animals">
             <button className="animal-btn text-start">All animals</button>
            </Link>
         </div>

@@ -6,7 +6,7 @@ export default function ImageCard({ animal }) {
   const { name, type, price, image, category, description } = animal;
   console.log(animal);
   return (
-    <Card className=" w-full items-stretch md:flex-row">
+    <Card className=" w-full items-stretch md:flex-row bg-gray-100">
       <div className="relative h-35 w-full shrink-0 overflow-hidden rounded-2xl sm:h-30 sm:w-30">
         <Image
           alt={name}
