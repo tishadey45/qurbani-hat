@@ -31,7 +31,7 @@ export default function ImageCard({ animal }) {
               Price: BDT {price.toLocaleString()}
             </span>
           </div>
-         <Link href={`/animals/${animal.id}`}>
+         <Link href={`/animal-details`}>
           <Button className="w-full sm:w-auto">View more</Button>
          </Link>
         </Card.Footer>
