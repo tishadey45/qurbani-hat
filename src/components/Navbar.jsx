@@ -1,8 +1,23 @@
 import logo from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
+  const userData = authClient.useSession();
+  console.log(userData?.data?.user);
+  const user = userData?.data?.user;
+
+  const handleLogout = async () => {
+    const { error } = await authClient.signOut();
+
+    if (!error) {
+      router.push("/sign-in");
+    } else {
+      console.log("LOGOUT ERROR:", error);
+    }
+  };
   return (
     <div className="navbar bg-base-100 shadow-sm mx-auto ">
       <div className="flex-1">
@@ -37,20 +52,22 @@ export default function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
-            <li className="text-sm">tisha rani dey</li>
+            <li className="text-sm">{user?.name}</li>
             <li>
               <Link href="/profile" className="justify-between">
                 Profile
                 <span className="badge">New</span>
               </Link>
             </li>
-
-            <li>
-              <button>Logout</button>
-            </li>
-            <li>
-              <Link href="/sign-in">Sign in</Link>
-            </li>
+            {user ? (
+              <li>
+                <button onClick={handleLogout}>Logout</button>
+              </li>
+            ) : (
+              <li>
+                <Link href="/sign-in">Sign in</Link>
+              </li>
+            )}
           </ul>
         </div>
       </div>
