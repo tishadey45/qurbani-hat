@@ -20,6 +20,13 @@ export default function Navbar() {
       console.log("LOGOUT ERROR:", error);
     }
   };
+
+  const avatar =
+  user?.image?.startsWith("http")
+    ? user.image
+    : "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp";
+
+    
   return (
     <div className="navbar bg-base-100 shadow-sm mx-auto ">
       <div className="flex-1">
@@ -45,10 +52,7 @@ export default function Navbar() {
           >
             <div className="w-10 rounded-full">
               <Image
-                src={
-                  user?.image ||
-                  "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                }
+                src={avatar}
                 alt="avatar"
                 width={40}
                 height={40}
