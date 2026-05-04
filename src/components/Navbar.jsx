@@ -1,5 +1,6 @@
 "use client";
 import logo from "@/assets/logo.png";
+import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
