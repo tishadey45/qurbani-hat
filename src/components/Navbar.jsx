@@ -6,7 +6,6 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-100 shadow-sm mx-auto ">
       <div className="flex-1">
-        
         <Image src={logo} alt="QurbaniHat" width={100} height={50} />
       </div>
       <div className="mx-auto flex justify-between items-center">
@@ -35,20 +34,22 @@ export default function Navbar() {
             </div>
           </div>
           <ul
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
+            <li className="text-sm">tisha rani dey</li>
             <li>
-              <a className="justify-between">
+              <Link href="/profile" className="justify-between">
                 Profile
                 <span className="badge">New</span>
-              </a>
+              </Link>
+            </li>
+
+            <li>
+              <button>Logout</button>
             </li>
             <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
+              <Link href="/sign-in">Sign in</Link>
             </li>
           </ul>
         </div>
