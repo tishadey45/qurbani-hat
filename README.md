@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 QurbaniHat – Livestock Booking Platform
 
-## Getting Started
+## 🌐 Live Demo
 
-First, run the development server:
+👉 [https://qurbani-hat-beta.vercel.app/](https://qurbani-hat-beta.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Project Purpose
+
+QurbaniHat is a modern livestock marketplace designed for the Qurbani season. Users can browse animals such as cows and goats, view detailed information, and book animals securely after authentication. The platform provides a smooth, responsive, and user-friendly experience.
+
+---
+
+## 🚀 Key Features
+
+### 🏠 Public Features
+
+* Modern responsive homepage with hero section
+* Featured animals section (4 items)
+* Extra sections: Qurbani Tips & Top Breeds
+* All Animals page with sorting by price
+* Animal details page with full information
+
+### 🔐 Authentication System
+
+* User Registration (Name, Email, Photo URL, Password)
+* User Login (Email & Password)
+* Google Social Login
+* Secure route protection for private pages
+
+### 🐮 Animal Marketplace
+
+* JSON-based animal data (6+ animals)
+* Animal cards with details view
+* Sorting by price (low to high / high to low)
+
+### 📦 Booking System
+
+* Booking form (Name, Email, Phone, Address)
+* Login required to book animals
+* Success toast notification
+* Form resets after submission (no DB storage required)
+
+### 👤 Profile System (Challenge Feature)
+
+* My Profile page shows:
+
+  * Name
+  * Email
+  * Profile Photo
+* Update Profile feature:
+
+  * Update Name and Image
+  * Integrated with Better Auth user update API
+
+### 🎨 UI/UX Features
+
+* Fully responsive (Mobile, Tablet, Desktop)
+* Unique custom design
+* Loading indicators while fetching data
+* Toast notifications for success/error
+* Custom 404 Not Found page
+* Smooth navigation experience
+
+---
+
+## 🧩 Routes
+
+### Public Routes
+
+* `/` → Home Page
+* `/animals` → All Animals Page
+* `/login` → Login Page
+* `/register` → Register Page
+
+### Private Routes
+
+* `/details-page` → Animal Details + Booking
+* `/my-profile` → User Profile Page
+
+---
+
+## 📦 NPM Packages Used
+
+* **Next.js** – React framework
+* **Tailwind CSS** – Styling
+* **HeroUI / DaisyUI** – UI components
+* **React Icons** – Icons
+* **React Hot Toast** – Notifications
+* **Lottie React** – Animations (extra feature)
+* **Better Auth** – Authentication system
+
+---
+
+## 🔐 Environment Variables
+
+Firebase / Auth credentials are stored securely using `.env.local`:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📂 Project Structure (Overview)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/app
+  /login
+  /register
+  /animals
+  /details-page
+  /my-profile
+/components
+/data
+/public
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚡ Installation & Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git clone https://github.com/tishadey45/qurbani-hat
+cd qurbani-hat
+npm install
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🏁 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployed on **Vercel** for fast and reliable performance.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Developer Notes
+
+* Fully SPA-friendly (no reload routing errors)
+* Protected routes implemented
+* Clean commit history (10+ meaningful commits)
+* Focus on UI consistency and responsiveness
+
